@@ -1,0 +1,13 @@
+{
+  "name": "js-dev-challenge",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest spec/"
+  },
+  "dependencies": {},
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
