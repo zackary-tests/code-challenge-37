@@ -79,7 +79,7 @@ api.funnel = (input, fn, startValue) => {
 api.distill = (input, fn) => {
   let result = [];
 
-  input.map(value => fn(value)? result.push(value) : null);
+  input.map(value => fn(value) ? result.push(value) : null);
 
   return result;
 };
@@ -104,7 +104,7 @@ api.numberOfChars = (input) => {
     return words + word;
   }
 
-  return api.funnel(input, combineIt,'').length;
+  return api.funnel(input, combineIt, '').length;
 
   // I originally wrote
   // return input.join('').length;
@@ -130,7 +130,7 @@ api.numberOfChars = (input) => {
 api.numberOfCertainChars = (input, c) => {
 
   function containsChar(word){
-    return word.split(c).length-1
+    return word.split(c).length - 1;
   }
 
   function add(total, n){
